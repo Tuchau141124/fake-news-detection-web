@@ -6,12 +6,12 @@ from tensorflow.keras.preprocessing.text import tokenizer_from_json
 import json
 
 # Load tokenizer
-with open('/Users/tuchou/Downloads/Final Quản trị dự án CNTT/ AI/tokenizer.json', 'r') as f:
+with open('/Users/tuchou/Downloads/TTNT/ AI/tokenizer.json', 'r') as f:
     tokenizer_data = json.load(f)
     tokenizer = tokenizer_from_json(tokenizer_data)
 
 # Load model
-model = tf.keras.models.load_model('/Users/tuchou/Downloads/Final Quản trị dự án CNTT/ AI/fake_news_detection_model.h5')
+model = tf.keras.models.load_model('/Users/tuchou/Downloads/TTNT/ AI/fake_news_detection_model.h5')
 
 # Function to predict
 def predict_news(text):
