@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing.text import tokenizer_from_json
 import json
 
 # Load tokenizer
-with open('tokenizer.json', 'r') as f:
+with open('/Users/tuchou/Downloads/Final Quản trị dự án CNTT/ AI/tokenizer.json', 'r') as f:
     tokenizer_data = json.load(f)
     tokenizer = tokenizer_from_json(tokenizer_data)
 
