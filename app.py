@@ -11,7 +11,7 @@ with open('/Users/tuchou/Downloads/Final Quản trị dự án CNTT/ AI/tokenize
     tokenizer = tokenizer_from_json(tokenizer_data)
 
 # Load model
-model = tf.keras.models.load_model('fake_news_model.h5')
+model = tf.keras.models.load_model('/Users/tuchou/Downloads/Final Quản trị dự án CNTT/ AI/fake_news_detection_model.h5')
 
 # Function to predict
 def predict_news(text):
